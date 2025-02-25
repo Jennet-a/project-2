@@ -1,0 +1,106 @@
+font-face {
+    font-family: "TTLakes";
+    src: 
+    local("TTLakes-Black"),
+    url("./fonts/TTLakes-Black.woff") format("woff");
+}
+body {
+    display:flexbox;
+    }
+.header {
+    width:max-content;
+    height: 88px;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+.header__icon {
+    margin-left: 16px;
+}
+.body {
+    height: max-content;
+    background-color: #f8f8f8;
+    padding-top: 16px;
+}
+.body__title {
+    height: 40px;
+    align-content: center;
+    font-size: 28px;
+    font-weight: bold;
+    padding-left: 12px;
+    border-left: 4px solid #41F6D7;
+    margin: 0;
+}
+.body__slidemenu {
+    display: flexbox;
+    margin-top:24px;
+    margin-left: 16px;
+}
+.button {
+    height: 40px;
+    width:max-content;
+    font-size: 16px;
+    padding-right: 20px;
+    background-color: #f8f8f8;
+    color:#7E7E82;
+    border: none;
+}
+.button:hover, .button:focus {
+    background-color: #ffffff;
+    border:2px solid #B8FFEC;
+    border-radius: 6px;
+}
+.body__subtitle {
+    padding-left: 16px;
+    padding-top: 24px;
+    font-size:14px;
+    color: #1B1C21;
+}
+.expand {
+    display: inline-flex;
+    font-size: 16px; 
+    height:24px;
+    position: absolute;  
+    align-items: center;
+}
+@media (max-width: 767px) {
+    .divider1, .call, .chat, .profile {
+    display: none;
+}
+    .body__slidemenu {
+    display: inline-flex;
+    overflow: scroll;
+}
+    .brand, .address, .part2, .part3 {
+    display: none;
+}
+    .body__image {
+    display: flex;
+    width: 100%;
+    margin-top: 16px;
+}
+}
+
+@media screen and (min-width:768px) and (max-width: 1119px) {
+    .call {
+        margin-left: 240px;
+    }
+    .body__slidemenu {
+        display: inline-flex;
+        overflow: scroll;
+    }
+    .brand, .address, .part3 {
+        display: none;
+    }
+    .body__subtitle {
+        width: 312px;
+        height: 220px;
+    }
+    .body__image {
+        width: 50%;
+        height: 208px;
+        display: flex;
+        position: absolute;
+        top: 250px;
+        left: 380px;
+    }
+}
